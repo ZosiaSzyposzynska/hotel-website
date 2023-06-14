@@ -1,0 +1,61 @@
+/* General */
+body {
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Hamburger */
+/* Navigation */
+.navigation {
+  padding: 12px 0 12px 0;
+}
+
+.navigation ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 24px;
+  position: relative;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.navigation ul ul {
+  display: block;
+}
+
+.navigation ul li ul {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  width: 200px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFBO0FBRUE7RUFDSSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FDQUo7O0FESUE7RUFDSSxpQkFBQTtFQUNBLGNBQUE7QUNESjs7QURJQSxjQUFBO0FBS0EsZUFBQTtBQUdBO0VBQ0ksc0JBQUE7QUNQSjs7QURXQTtFQUNJLFVBQUE7RUFDQSxxQkFBQTtBQ1JKOztBRFdBO0VBQ0kscUJBQUE7RUFDQSxhQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0FDUko7O0FEY0E7RUFDSSxxQkFBQTtBQ1hKOztBRGNBO0VBQ0ksY0FBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0FDWEo7O0FEY0E7RUFDSSxjQUFBO0FDWEo7O0FEZUE7RUFDSSxhQUFBO0VBQ0Esa0JBQUE7RUFDRCxhQUFBO0VBQ0MsU0FBQTtFQUNBLDJCQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0FDWko7O0FEZUE7RUFDSSxjQUFBO0FDWkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
