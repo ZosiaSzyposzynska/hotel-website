@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: black;
+    background-color: #ddecf3;
 
 }
 
@@ -18,7 +18,7 @@ li {
 }
 
 a {
-    color: white;
+    color: #7d8488;
     text-decoration: none;
 }
 
@@ -28,6 +28,8 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    position: relative;
+    z-index:2;
 }
 
 .nav-menu {
@@ -38,15 +40,29 @@ a {
 }
 
 .nav-branding {
-    font-size: 25px;
+    font-size: 28px;
+    font-family: 'Lora', serif;
+    font-weight: lighter;
+    text-shadow: 0 0 0.2em #ffffff;
+    transition: 0.8s ease;
+    
 }
 
 .navigation .nav-link {
-    transition: 0.7s ease;
+    transition: 0.8s ease;
+    color: #7d8488;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+.nav-branding:hover {
+    color: #60a9ba;
+    
 }
 
 .navigation .nav-link:hover{
-    color: blue;
+    color: white;
+    text-shadow: 0 0 0.3em #00576b;
 }
 
 .hamburger {
@@ -85,7 +101,7 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: black;
+        background-color: #a6c3ca;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -98,4 +114,55 @@ a {
     .nav-menu.active{
         left:0;
     }
+
+    body {
+        box-sizing: border-box;
+    }
+
+    .carousel {
+        height: 100%;
+       
+    }
+
+
+}
+
+
+/* Carousel */
+
+.carousel {
+
+    position: relative;
+    
+}
+
+
+
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption h4{
+    color: #f6f2ef;
+    font-family: 'Lora', serif;
+    text-shadow: 0 0 0.3em #00576b;
+    font-size: 32px;
+    font-weight: lighter;
+
+}
+
+.carousel-caption h3 {
+    font-size: 80px;
+    text-shadow: 0 0 0.3em #00576b;
+    font-family: 'Abril Fatface', cursive;
 }
