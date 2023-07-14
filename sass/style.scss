@@ -7,7 +7,7 @@
 }
 
 header {
-    background-color: #ddecf3;
+    background-color: #e5dcd5;
 
 }
 
@@ -15,12 +15,13 @@ header {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;  
+    
 }
 
 h2 {
     font-size: 40px;
     font-family: 'Abril Fatface', cursive;
-    color: #495057;
+    color: #6a3e36;
 }
 
 
@@ -33,7 +34,7 @@ li {
 }
 
 a {
-    color: #7d8488;
+    color: #6a3e36;
     text-decoration: none;
 }
 
@@ -65,7 +66,7 @@ a {
 
 .navigation .nav-link {
     transition: 0.8s ease;
-    color: #7d8488;
+    color: #6a3e36;
     font-family: 'Lora', serif;
     font-size: 20px;
 }
@@ -180,29 +181,78 @@ a {
 }
 
 .contact-button {
-    border-style: solid;
-    border-width: 1px;;
-    border-color: white;
-    padding: 10px;
-    background-color: #00576b;
-    width: 300px;
-    color: #f6f2ef;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 20px;
-    font-weight: lighter;
-    text-shadow: 0 0 0.3em #00576b;
-    
+    position: relative;
+      left: 50%;
+      top: 40px;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      padding: 10px;
+      background-color: transparent;
+      color: #fff;
+      font-family: 'Lora', serif;
+      font-weight: bold;
+      font-size: 35px;
+      width: 200px;
+      height: 68px;
+      cursor: pointer;
+      text-shadow: 0 0 0.3em #00576b;
+      border-style: none;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+      
+}
+
+.contact-button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 3px solid #00576b;
+    border-right: 3px solid #00576b;
+    animation: border-top-right 2s infinite alternate;
+
+}
+
+
+.contact-button::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid #00576b;
+    border-left: 3px solid #00576b;
+    animation: border-bottom-left 2s infinite alternate;
+
+}
+
+@keyframes border-top-right{
+    0% {width: 0; height: 0px;}
+    25% {width: 200px; height: 0px;}
+    50% {width: 200px; height: 68px;}
+    100% {width: 200px; height: 68px;}
+}
+
+@keyframes border-bottom-left{
+    0% {width: 0; height: 0px;}
+    50% {width: 200px; height: 0px;}
+    75% {width: 200px; height: 0px;}
+    100% {width: 200px; height: 68px;}
 }
 
 .contact-button:hover{
- background-color: #f6f2ef;
- color: #00576b;
- border-style:solid;
- border-color: #00576b;
+    box-shadow: 8px 8px 24px 0px #00576b;
 }
 
 
 /* Offer */
+
+
+
 
 .card img {
     width: 100%;
@@ -236,7 +286,6 @@ a {
 }
 
 .read-more {
-    background-color:  #ddecf3;
     color: #495057;
     font-family: 'Lora', serif;
     font-weight: bold;
@@ -256,22 +305,147 @@ a {
 
 .read-more::marker{
     font-size: 17px;
-    color: #00576b;
+    color: #6a3e36;
 }
 
 .book-button {
-    background-color: #00576b;
-    padding: 7px;
+    background-color: #6a3e36;
+
+    padding: 14px;
     border-style: none;
     color: white;
+    font-size: 14px;
     font-family: 'Lora', serif;
     font-weight: bold;
+    border-radius: 4px;
 }
 
 .book-button:hover {
-    background-color: #47939b;
-    transition: all 0.4s ease-in-out;
+    background-color: #c4b8ba;
+    transition: all 0.2s ease-in-out;
 }
 
-/* Reservation */
+/* Restaurant */
+
+
+.restaurant {
+    background-color: #e0a16e;
+}
+
+.restaurant h2{
+    color: #6a3e36;
+     font-weight: bold;
+     position: relative;
+     top: 20px;
+}
+
+.restaurant img{
+    width: 640px;
+    height: 620px;
+    position: relative;
+    margin-left: -17px;
+    margin-top: 40px;
+    z-index: 1;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #6a3e36;
+}
+
+.restaurant-content {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.restaurant-description {
+  margin-left: 20px;
+  margin-top: -6px;
+  text-align: justify;
+  
+ 
+}
+
+.restaurant-description h3{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 22px;
+     color: #6a3e36;
+     font-weight: bold;
+}
+
+.restaurant-description p{
+    font-family: 'Lora', serif;
+    color: white;
+    font-size: 16px;
+}
+
+.button-restaurant {
+    position: relative;
+      left: 50%;
+      top: -110px;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      padding: 10px;
+      background-color: transparent;
+      color: #fff;
+      font-family: 'Lora', serif;
+      font-weight: bold;
+      font-size: 35px;
+      width: 200px;
+      height: 68px;
+      cursor: pointer;
+      text-shadow: 0 0 0.3em black;
+      border-style: none;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+      
+}
+
+.button-restaurant::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    animation: border-top-right 2s infinite alternate;
+
+}
+
+
+.button-restaurant::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    animation: border-bottom-left 2s infinite alternate;
+
+}
+
+@keyframes border-top-right{
+    0% {width: 0; height: 0px;}
+    25% {width: 200px; height: 0px;}
+    50% {width: 200px; height: 68px;}
+    100% {width: 200px; height: 68px;}
+}
+
+@keyframes border-bottom-left{
+    0% {width: 0; height: 0px;}
+    50% {width: 200px; height: 0px;}
+    75% {width: 200px; height: 0px;}
+    100% {width: 200px; height: 68px;}
+}
+
+.button-restaurant:hover{
+    box-shadow: 8px 8px 24px 0px white;
+}
+
+
 
